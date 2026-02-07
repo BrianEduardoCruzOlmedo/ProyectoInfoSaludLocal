@@ -1,32 +1,49 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Pagina principal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoSalud - Inicio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1>InfoSalud Local</h1>
-   
-        <fieldset>
-             <legend> <h4>Iniciar Sesion</h4></legend>
-           
-            <p>Ingresa tu username: <input type="text"></p>
-            <p>Ingresa tu password: <input type="password"></p>
-            <input type="button" value="Iniciar">
-        
-        </fieldset>
-      
-    
-   O
-    <fieldset>
-             <legend> <h4>Crea Sesion</h4></legend>
-    <p>Ingresa tu Nombre Real: <input type="text"></p>
-    <p>Ingresa tu username: <input type="text"></p>
-    <p>Añade alguna foto: <input type="file"></p>
-    <p>Ingresa tu password: <input type="password"></p>
-    <p>Ingresa repite tu password: <input type="password"></p>
-    
-    <input type="button" value="Crear">
-            </fieldset>
+    <nav class="navbar">
+        <span class="logo">InfoSalud</span>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ejercicio</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Nutrición</a></li>
+            <li><a href="#">Comunidad</a></li>
+            <li><a href="registro.html" class="btn-primary">Únete</a></li>
+        </ul>
+    </nav>
 
+    <section class="hero">
+        <h1>Rompe las cadenas del sedentarismo</h1>
+        <p>Tu cuerpo no está diseñado para una vida sedentaria. Descubre cómo el ejercicio, los hobbies saludables y la diversión pueden liberarte de la prisión moderna.</p>
+        <a href="registro.html" class="btn-main">Comienza Ya</a>
+    </section>
+
+    <section class="pasos">
+        <h2>Transforma tu vida en 3 pasos</h2>
+        <div class="contenedor-tarjetas">
+            <article class="tarjeta">
+                <h3>Ejercicio Diario</h3>
+                <p>Incorpora al menos 30 minutos de actividad física diaria.</p>
+                <button>Ver Rutinas</button>
+            </article>
+            <article class="tarjeta">
+                <h3>Hobbies Creativos</h3>
+                <p>Dedica tiempo a actividades que estimulen tu mente.</p>
+                <button>Descubre Hobbies</button>
+            </article>
+            <article class="tarjeta">
+                <h3>Nutrición Consciente</h3>
+                <p>Alimenta tu cuerpo con lo que necesita, no solo lo rápido.</p>
+                <button>Ver Recetas</button>
+            </article>
+        </div>
+    </section>
 </body>
 </html>

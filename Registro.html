@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>InfoSalud - Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>InfoSalud</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><h2>Únete a la Comunidad</h2></legend>
+                
+                <p>
+                    <label for="nombre">Nombre Real:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </p>
+
+                <p>
+                    <label for="usuario">Nombre de Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ej: JuanSalud" required minlength="4">
+                </p>
+
+                <p>
+                    <label for="foto">Foto de Perfil:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+                </p>
+
+                <p>
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" id="pass" name="pass" required minlength="8">
+                </p>
+
+                <p>
+                    <label for="pass-confirm">Repetir Contraseña:</label>
+                    <input type="password" id="pass-confirm" name="pass-confirm" required>
+                </p>
+
+                <div>
+                    <button type="submit">Comenzar Ya</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
