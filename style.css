@@ -83,4 +83,74 @@ button, .btn-main {
     .nav-links li {
         margin: 10px 0;
     }
+
+    /* =========================================
+   ESTILO DEL FORMULARIO DE REGISTRO
+   ========================================= */
+
+/* Hacemos que el formulario se vea centrado y limpio */
+form {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 40px auto; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+    border-top: 5px solid #27ae60; 
+}
+
+/* Estilo para los títulos del formulario */
+fieldset {
+    border: none; 
+    padding: 0;
+    margin: 0;
+}
+
+legend h2 {
+    color: #27ae60;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las cajitas de texto (Inputs) */
+form input[type="text"],
+form input[type="password"],
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para que no se salga del ancho */
+}
+
+/* Efecto verde cuando escribes */
+form input:focus {
+    outline: none;
+    border-color: #27ae60;
+    background-color: #f0fff4;
+}
+
+/* Acomodar los botones del formulario */
+form div {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form button {
+    width: 100%; /* Que ocupen todo el espacio disponible */
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Botón de limpiar (Color gris para diferenciar) */
+button[type="reset"] {
+    background-color: #7f8c8d;
+}
+button[type="reset"]:hover {
+    background-color: #95a5a6;
+}
 }
