@@ -3,47 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoSalud - Inicio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>InfoSalud - Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar">
-        <span class="logo">InfoSalud</span>
-        <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Ejercicio</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li><a href="#">Nutrición</a></li>
-            <li><a href="#">Comunidad</a></li>
-            <li><a href="registro.html" class="btn-primary">Únete</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">InfoSalud</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <div class="navbar-nav">
+                <a class="nav-link active dropdown-toggle" href="Index.html" data-bs-toggle="dropdown" aria-expanded="false">Mas</a>
+                <div class="dropdown">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Ejercicio</a></li>
+                    <li><a class="dropdown-item" href="#">Hobbies</a></li>
+                    <li><a class="dropdown-item" href="#">Nutricion</a></li>
+                    <li><a class="dropdown-item" href="#">Alimentacion</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Comunidad</a></li>
+
+                </ul>
+            </div>
+                <a class="btn btn-outline-light ms-lg-3" href="Registro.html">Únete</a>
+            </div>
+            </div>
+        </div>
     </nav>
 
-    <section class="hero">
-        <h1>Rompe las cadenas del sedentarismo</h1>
-        <p>Tu cuerpo no está diseñado para una vida sedentaria. Descubre cómo el ejercicio, los hobbies saludables y la diversión pueden liberarte de la prisión moderna.</p>
-        <a href="registro.html" class="btn-main">Comienza Ya</a>
-    </section>
-
-    <section class="pasos">
-        <h2>Transforma tu vida en 3 pasos</h2>
-        <div class="contenedor-tarjetas">
-            <article class="tarjeta">
-                <h3>Ejercicio Diario</h3>
-                <p>Incorpora al menos 30 minutos de actividad física diaria.</p>
-                <button>Ver Rutinas</button>
-            </article>
-            <article class="tarjeta">
-                <h3>Hobbies Creativos</h3>
-                <p>Dedica tiempo a actividades que estimulen tu mente.</p>
-                <button>Descubre Hobbies</button>
-            </article>
-            <article class="tarjeta">
-                <h3>Nutrición Consciente</h3>
-                <p>Alimenta tu cuerpo con lo que necesita, no solo lo rápido.</p>
-                <button>Ver Recetas</button>
-            </article>
+    <header class="py-5 mb-4 bg-light border-bottom">
+        <div class="container text-center my-5">
+            <h1 class="display-5 fw-bold text-success">Rompe las cadenas del sedentarismo</h1>
+            <p class="lead">Tu cuerpo no está diseñado para una vida sedentaria.</p>
+            <button class="btn btn-success btn-lg">Comienza Ya</button>
         </div>
-    </section>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Ejercicio Diario</h3>
+                        <p>Al menos 30 minutos de actividad física.</p>
+                        <button class="btn btn-outline-success">Ver Rutinas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Hobbies Creativos </h3>
+                        <p>Dedica tiempo a actividades que 
+                            estimulen tu mente y reduzcan 
+                            el estrés. Pintura, jardinería, 
+                            música o cualquier pasión que 
+                            desconecte del trabajo.</p>
+                        <button class="btn btn-outline-success">Descubre Hobbies</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3>Nutrición Consciente </h3>
+                        <p>Alimenta tu cuerpo con lo que 
+                        necesita, no solo con lo que es 
+                        rápido. Aprende a preparar 
+                        comidas saludables que 
+                        potencien tu energía y bienestar. </p>
+                        <button class="btn btn-outline-success">Ver Recetas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
