@@ -3,89 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoSalud - Bootstrap</title>
+    <title>InfoSalud - Estilo de Vida Activo</title>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Opcional recomendado: Desplazamiento suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Ajuste para que las imágenes de las cards tengan un tamaño uniforme */
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
 
- <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="#">InfoSalud</a>
+        <a class="navbar-brand fw-bold" href="#">InfoSalud</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> 
+            <ul class="navbar-nav ms-auto align-items-center"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <button  class="nav-link dropdown-toggle" type="button"  data-bs-toggle="dropdown" aria-expanded="false">
-                        Más
-                    </button >
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorías
+                    </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#Ejercicio">Ejercicio</a></li>
                         <li><a class="dropdown-item" href="#Hobbies">Hobbies</a></li>
-                        <li><a class="dropdown-item" href="#Nutricion">Nutricion</a></li>
-                        <li><a class="dropdown-item" href="#Alimentacion">Alimentacion</a></li>
+                        <li><a class="dropdown-item" href="#Nutricion">Nutrición</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#Comunidad">Comunidad</a></li>
+                        <li><a class="dropdown-item" href="https://blog.salud.gob.mx" target="_blank">Blog Externo</a></li>
                     </ul>
                 </li>
-
                 <li class="nav-item">
-                    <a class="btn btn-outline-light ms-lg-3" href="Registro.html">Únete</a>
+                    <a class="btn btn-outline-light ms-lg-3" href="Registro.html">Únete a la comunidad</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-    <header class="py-5 mb-4 bg-light border-bottom">
-        <div class="container text-center my-5">
-            <h1 class="display-5 fw-bold text-success">Rompe las cadenas del sedentarismo</h1>
-            <p class="lead">Tu cuerpo no está diseñado para una vida sedentaria.</p>
-            <button class="btn btn-success btn-lg">Comienza Ya</button>
-        </div>
-    </header>
 
-    <div class="container mb-5">
-        <div class="row text-center">
-            <div class="col-md-6 col-lg-4 col-12">
-                <div class="card h-100" id="Ejercicio">
-                    <h3>Ejercicio Diario</h3>
-                    <p>Al menos 30 minutos de actividad física.</p>
-                    <button class="btn btn-outline-success">Ver Rutinas</button>
-                </div>
+<header class="py-5 mb-5 bg-light border-bottom">
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold text-success mb-3">Rompe las cadenas del sedentarismo</h1>
+                <p class="lead mb-4">Tu cuerpo no está diseñado para estar quieto. Descubre cómo pequeños cambios hoy transforman tu vitalidad del mañana.</p>
+                <a href="#servicios" class="btn btn-success btn-lg px-4 shadow">Ver planes de salud</a>
             </div>
-            <div class="col-md-6 col-lg-4 col-12">
-                <div class="card h-100" id="Hobbies">
-                    <div class="card-body">
-                        <h3>Hobbies Creativos </h3>
-                        <p>Dedica tiempo a actividades que 
-                            estimulen tu mente y reduzcan 
-                            el estrés. Pintura, jardinería, 
-                            música o cualquier pasión que 
-                            desconecte del trabajo.</p>
-                        <button class="btn btn-outline-success">Descubre Hobbies</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-12">
-                <div class="card h-100" id="Nutricion">
-                    <div class="card-body">
-                        <h3>Nutrición Consciente </h3>
-                        <p>Alimenta tu cuerpo con lo que 
-                        necesita, no solo con lo que es 
-                        rápido. Aprende a preparar 
-                        comidas saludables que 
-                        potencien tu energía y bienestar. </p>
-                        <button class="btn btn-outline-success">Ver Recetas</button>
-                    </div>
-                </div>
+            <div class="col-lg-6 d-none d-lg-block text-center">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=600" alt="Persona ejercitándose" class="img-fluid rounded-4 shadow-lg">
             </div>
         </div>
     </div>
+</header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<div class="container mb-5" id="servicios">
+    <div class="row g-4">
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0" id="Ejercicio">
+                <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&q=80&w=400" class="card-img-top img-fluid" alt="Rutina de ejercicio">
+                <div class="card-body d-flex flex-column">
+                    <h3 class="h5 fw-bold">Ejercicio Diario</h3>
+                    <p class="text-muted">Desarrolla fuerza y resistencia con solo 30 minutos de actividad diaria guiada por expertos.</p>
+                    <a href="rutinas.html" class="btn btn-outline-success mt-auto">Explorar Rutinas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0" id="Hobbies">
+                <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&auto=format&fit=crop&q=80&w=400" class="card-img-top img-fluid" alt="Persona pintando">
+                <div class="card-body d-flex flex-column">
+                    <h3 class="h5 fw-bold">Mente Activa</h3>
+                    <p class="text-muted">Reduce el estrés mediante hobbies creativos que desconecten tu cerebro de la rutina laboral.</p>
+                    <a href="bienestar.html" class="btn btn-outline-success mt-auto">Descubrir Hobbies</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0" id="Nutricion">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=400" class="card-img-top img-fluid" alt="Comida saludable">
+                <div class="card-body d-flex flex-column">
+                    <h3 class="h5 fw-bold">Nutrición Consciente</h3>
+                    <p class="text-muted">Aprende a preparar platos rápidos y nutritivos que potencien tu energía natural cada día.</p>
+                    <a href="recetas.html" class="btn btn-outline-success mt-auto">Ver Recetas Saludables</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
